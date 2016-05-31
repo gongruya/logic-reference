@@ -1,0 +1,341 @@
+3
+Uncle(John,Sarah)
+Sibling(John,Sarah)
+Sibling(John,Neelu)
+10
+Male(x) ^ Parent(m,z) ^ Sibling(x,m) => Uncle(x,z)
+Father(x,y) => Parent(x,y)
+Mother(x,y) => Parent(x,y)
+Parent(x,p) ^ Parent(x,w) => Sibling(p,w)
+Male(John)
+Father(Shawn,John)
+Father(Suresh,Ramesh)
+Mother(kill,bill)
+Mother(Neelu,Sarah)
+Father(Shawn,Neelu)
+
+1
+~A(N)
+2
+B(c) => A(c)
+B(N)
+
+
+8
+A(Bob)
+Q(Bob)
+Q(Cyde)
+U(S,T,S,T)
+U(T,T,S,S)
+U(T,T,T,T)
+U(T,S,T,S)
+U(T,S,S,S)
+10
+B(x,x,y,y,z) => A(x)
+C(x) => B(y,y,z,z,x)
+C(Bob)
+P(a,b,c) => Q(c)
+R(a,b,c) => P(c,a,b)
+R(Alice,Bob,Cyde)
+U(a,a,b,b) => ~V(b,b,c)
+U(a,a,b,b) => ~V(b,a,a)
+~V(a,b,c) => U(a,b,c,b)
+U(S,S,T,T)
+
+
+1
+H(Tom,John)
+7
+B(Bob,x,y,y,z) => A(x)
+B(Bob,Bob,y,y,z) => B(Bob,x,y,y,Bob)
+C(x) => B(y,y,z,z,Bob)
+C(Bob)
+F(x,John) ^ G(Tom,y) => H(Tom,John)
+C(Bob) => F(x,John)
+C(Bob) => G(Tom,B)
+
+
+
+
+
+1
+D(John)
+3
+A(x,y) => D(x)
+B(John) => A(a,b)
+B(John)
+
+1
+X(C)
+4
+A(x,y) ^ B(x,y) => X(z)
+E(X) => A(x,x)
+E(X)
+B(X,Y)
+
+1
+C(AA,BB,CC)
+3
+A(x,z) ^ B(y,z) => C(AA,BB,x)
+A(CC,EE)
+B(KK,LL)
+
+1
+H(Adam)
+3
+D(z,y) => H(x)
+A(x) => D(x,x)
+A(Bob)
+
+4
+C(PHD,PHD)
+C(MS,MS)
+C(EE,EE)
+C(CS,CS)
+5
+A(x,y)^B(z,w)=>C(x,w)
+C(y,x)=>A(x,y)
+C(x,y)=>B(y,x)
+A(EE,CS)
+B(MS,PHD)
+
+1
+D(John)
+5
+A(x) ^ B(x) => D(x)
+C(x) => A(x)
+A(x) => C(x)
+C(x) => B(x)
+C(John)
+
+
+4
+C(PHD,PHD)
+C(MS,MS)
+C(EE,EE)
+C(CS,CS)
+5
+A(x,y) ^ B(z,w) => C(x,w)
+C(y,x) => A(x,y)
+C(x,y) => B(y,x)
+A(EE,CS)
+B(MS,PHD)
+
+7
+F(Bob)
+H(John)
+~H(Alice)
+~H(John)
+G(Bob)
+G(Tom)
+R(Tom)
+14
+A(x) => H(x)
+D(x,y) => ~H(y)
+B(x,y) ^ C(x,y) => A(x)
+B(John,Alice)
+B(John,Bob)
+D(x,y) ^ Q(y) => C(x,y)
+D(John,Alice)
+Q(Bob)
+D(John,Bob)
+F(x) => G(x)
+G(x) => H(x)
+H(x) => F(x)
+R(x) => H(x)
+R(Tom)
+
+1
+Fly(Ram)
+8
+Friend(x,y) ^ Fly(x) => Fly(y)
+Parent(x,y) ^ Hero(y) => Fly(x)
+Parent(Dr,Doom)
+Hero(Doom)
+Friend(Dr,Pilot)
+Friend(Pilot,Tom)
+Friend(Tom,Cruise)
+Friend(Cruise,Ram)
+
+
+1
+B(John)
+3
+A(x) => B(x)
+B(x) => A(x)
+A(John)
+
+
+
+
+
+
+
+1
+F(B,A)
+3
+G(x,y) => F(y,x)
+F(S,SS) => G(x,y)
+G(SS,S)
+
+6
+F(Bob)
+H(John)
+~H(Alice)
+~H(John)
+G(Bob)
+G(Tom)
+14
+A(x) => H(x)
+D(x,y) => ~H(y)
+B(x,y) ^ C(x,y) => A(x)
+B(John,Alice)
+B(John,Bob)
+D(x,y) ^ Q(y) => C(x,y)
+D(John,Alice)
+Q(Bob)
+D(John,Bob)
+F(x) => G(x)
+G(x) => H(x)
+H(x) => F(x)
+R(x) => H(x)
+R(Tom)
+
+1
+H(John)
+7
+A(x) => H(x)
+B(x,y) ^ C(x,y) => A(x)
+B(John,Alice)
+B(John,Bob)
+D(x,y) ^ Q(y) => C(x,y)
+Q(Bob)
+D(John,Bob)
+
+
+1
+F(B,A)
+3
+G(x,y) => F(y,x)
+F(S,SS) => G(x,y)
+G(SS,S)
+
+
+
+
+
+
+4
+C(PHD,PHD)
+C(MS,MS)
+C(EE,EE)
+C(CS,CS)
+5
+A(x,y) ^ B(z,w) => C(x,w)
+C(y,x) => A(x,y)
+C(x,y) => B(y,x)
+A(EE,CS)
+B(MS,PHD)
+
+
+1
+F(John)
+2
+G(Alice) => F(x)
+G(Alice)
+
+
+
+
+1
+F(Bob)
+14
+A(x) => H(x)
+D(x,y) => ~H(y)
+B(x,y) ^ C(x,y) => A(x)
+B(John,Alice)
+B(John,Bob)
+D(x,y) ^ Q(y) => C(x,y)
+D(John,Alice)
+Q(Bob)
+D(John,Bob)
+F(x) => G(x)
+G(x) => H(x)
+H(x) => F(x)
+R(x) => H(x)
+R(Tom)
+
+
+
+1
+H(John)
+4
+F(x) ^ G(x) => H(x)
+F(Alice)
+F(John)
+G(John)
+
+
+
+1
+H(John)
+14
+A(x) => H(x)
+D(x,y) => ~H(y)
+B(x,y) ^ C(x,y) => A(x)
+B(John,Alice)
+B(John,Bob)
+D(x,y) ^ Q(y) => C(x,y)
+D(John,Alice)
+Q(Bob)
+D(John,Bob)
+F(x) => G(x)
+G(x) => H(x)
+H(x) => F(x)
+R(x) => H(x)
+R(Tom)
+
+
+
+
+
+
+6
+F(Bob)
+H(John)
+~H(Alice)
+~H(John)
+G(Bob)
+G(Tom)
+14
+A(x) => H(x)
+D(x,y) => ~H(y)
+B(x,y) ^ C(x,y) => A(x)
+B(John,Alice)
+B(John,Bob)
+D(x,y) ^ Q(y) => C(x,y)
+D(John,Alice)
+Q(Bob)
+D(John,Bob)
+F(x) => G(x)
+G(x) => H(x)
+H(x) => F(x)
+R(x) => H(x)
+R(Tom)
+
+
+
+
+
+1
+F(John)
+3
+G(x) => H(x)
+H(x) => F(x)
+G(John)
+
+
+
+
+
+
